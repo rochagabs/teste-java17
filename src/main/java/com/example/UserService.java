@@ -1,16 +1,16 @@
 package com.example;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserService {
 
     public static void main(String[] args) {
-        List<Object> inputs = List.of(
-                "Gabriela",
-                42,
-                3.14,
-                null
-        );
+        List<Object> inputs = new ArrayList<>();
+        inputs.add("Gabriela");
+        inputs.add(42);
+        inputs.add(3.14);
+        inputs.add(null);
 
         for (Object input : inputs) {
             System.out.println(describe(input));
